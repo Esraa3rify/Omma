@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
+import 'activities/activity_screen.dart';
+import 'badges/badge_screen.dart';
+
 class Plan_screen extends StatefulWidget {
   @override
   State<Plan_screen> createState() => _Plan_screenState();
@@ -52,7 +55,7 @@ class _Plan_screenState extends State<Plan_screen> {
         backgroundColor: Colors.black,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(60.0),
+        padding: const EdgeInsets.all(10.0),
         child: Column(
           children: [
             Row(
@@ -75,7 +78,7 @@ class _Plan_screenState extends State<Plan_screen> {
               ],
             ),
             SizedBox(
-              height: 80.0,
+              height: 50.0,
             ),
             Padding(
               padding: const EdgeInsets.only(top: 80.0),
@@ -90,7 +93,9 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check1, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // n
+                            // checked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -109,7 +114,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -121,7 +126,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check2, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -140,7 +146,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -152,7 +158,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check3, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -171,7 +178,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -183,7 +190,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check4, //u
-                            checkColor: Color(0xFFF86262), //nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), //nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -202,7 +210,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -214,7 +222,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check5, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -233,7 +242,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                     ],
@@ -250,7 +259,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check6, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -269,7 +279,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -281,7 +291,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check7, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -300,7 +311,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -312,7 +323,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check8, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -331,7 +343,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -343,7 +355,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check9, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -362,7 +375,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -374,7 +387,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check10, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -385,6 +399,7 @@ class _Plan_screenState extends State<Plan_screen> {
                                     percent += 0.03;
                                     rounded_percent = double.parse(
                                         percent.toStringAsFixed(2));
+                                    _navigateToBadgeScreen(context);
                                   });
                                 }
                               });
@@ -393,7 +408,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                     ],
@@ -410,7 +425,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check11, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -429,7 +445,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -441,7 +457,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check12, //u
-                            checkColor: Color(0xFFF86262), //nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), //nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -460,7 +477,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -472,7 +489,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check13, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -491,7 +509,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -503,7 +521,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check14, //u
-                            checkColor: Color(0xFFF86262), //nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), //nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -522,7 +541,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -534,7 +553,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check15, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -553,7 +573,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                     ],
@@ -570,7 +590,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check16, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -589,7 +610,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -601,7 +622,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check17, //u
-                            checkColor: Color(0xFFF86262), //nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), //nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -620,7 +642,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -632,7 +654,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check18, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -651,7 +674,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -663,7 +686,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check19, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -682,7 +706,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -694,7 +718,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check20, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -713,7 +738,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                     ],
@@ -730,7 +755,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check21, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -749,7 +775,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -761,7 +787,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check22, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -780,7 +807,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -792,7 +819,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check23, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -811,7 +839,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -823,7 +851,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check24, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -842,7 +871,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -854,7 +883,8 @@ class _Plan_screenState extends State<Plan_screen> {
                         child: Checkbox(
                             //only check box
                             value: check25, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -873,14 +903,9 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
-
-
-
-
-
                     ],
                   ),
                   SizedBox(
@@ -893,9 +918,10 @@ class _Plan_screenState extends State<Plan_screen> {
                         width: 60.0,
                         height: 60.0,
                         child: Checkbox(
-                          //only check box
+                            //only check box
                             value: check26, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -914,7 +940,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -924,9 +950,10 @@ class _Plan_screenState extends State<Plan_screen> {
                         width: 60.0,
                         height: 60.0,
                         child: Checkbox(
-                          //only check box
+                            //only check box
                             value: check27, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -945,7 +972,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -955,9 +982,10 @@ class _Plan_screenState extends State<Plan_screen> {
                         width: 60.0,
                         height: 60.0,
                         child: Checkbox(
-                          //only check box
+                            //only check box
                             value: check28, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -976,7 +1004,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -986,9 +1014,10 @@ class _Plan_screenState extends State<Plan_screen> {
                         width: 60.0,
                         height: 60.0,
                         child: Checkbox(
-                          //only check box
+                            //only check box
                             value: check29, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -1007,7 +1036,7 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
                       SizedBox(
@@ -1017,9 +1046,10 @@ class _Plan_screenState extends State<Plan_screen> {
                         width: 60.0,
                         height: 60.0,
                         child: Checkbox(
-                          //only check box
+                            //only check box
                             value: check30, //u
-                            checkColor: Color(0xFFF86262), // nchecked
+                            checkColor: const Color(0xFFFF8787),
+                            activeColor: const Color(0xFFFF8787), // nchecked
 
                             onChanged: (bool? value) {
                               //value returned when checkbox is clicked
@@ -1030,6 +1060,7 @@ class _Plan_screenState extends State<Plan_screen> {
                                     percent += 0.03;
                                     rounded_percent = double.parse(
                                         percent.toStringAsFixed(2));
+                                    _navigateToNextScreen(context);
                                   });
                                 }
                               });
@@ -1038,19 +1069,12 @@ class _Plan_screenState extends State<Plan_screen> {
                           borderRadius: BorderRadius.circular(
                             10.0,
                           ),
-                          color: Colors.white,
+                          color: const Color(0xFFFF8787),
                         ),
                       ),
-
-
-
-
-
                     ],
                   )
                 ],
-
-
               ),
             ),
           ],
@@ -1059,4 +1083,14 @@ class _Plan_screenState extends State<Plan_screen> {
       backgroundColor: Colors.black,
     );
   }
+}
+
+void _navigateToNextScreen(BuildContext context) {
+  Navigator.of(context)
+      .push(MaterialPageRoute(builder: (context) => Activity_screen()));
+}
+
+void _navigateToBadgeScreen(BuildContext context) {
+  Navigator.of(context)
+      .push(MaterialPageRoute(builder: (context) => Badge_Screen()));
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gym/plan_screen.dart';
 import 'package:gym/splash/splash_screen.dart';
 
+import 'badges/badge_screen.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Plan_screen(),
+      home: Splash_screen(),
     );
   }
 

@@ -31,6 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
   percent_indicator: ^4.2.3
+  url_launcher: ^6.0.0
+  animations: ^2.0.7
     
 
 
@@ -62,6 +64,7 @@ flutter:
         - asset: fonts/Ruwudu-Bold.ttf
   assets:
     - images/icon.png
+    - images/badge.png
     #- images/a_dot_ham.jpeg
 
 
